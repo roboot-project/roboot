@@ -5,4 +5,11 @@
 """
 import subprocess
 import os
-os.system('custom.sh') # sets the background to blue
+
+def cmd(c="cls"):
+  os.system(c)
+  
+def exe(f):
+ subprocess.call(f)
+
+exe(["custom.sh"]) # Customize Color
