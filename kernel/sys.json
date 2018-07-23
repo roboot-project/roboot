@@ -1,5 +1,7 @@
 {
   "first-run":"true",
   "version":"1.0",
-  "sys_path":"C:\roboot"
+  "sys_path":"C:\roboot",
+  "username":"",
+  "password":""
 }
