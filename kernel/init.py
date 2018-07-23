@@ -5,6 +5,7 @@
 002, Add edits section.
 003, Add welcome message.
 004, Returns subprocess output instead of ignoring it.
+005, Add error system.
 """
 import subprocess
 import os
@@ -17,3 +18,10 @@ def exe(f):
 
 exe(["custom.sh"]) # Customize Color
 cmd("echo 'Welcome to Roboot.'")
+
+# Idk what now.
+_error = None
+
+while True:
+  if not _error == None:
+    cmd("echo 'Error," + _error + "'")
