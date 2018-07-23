@@ -4,6 +4,7 @@
 001, Add custom.sh, changes text color.
 002, Add edits section.
 003, Add welcome message.
+004, Returns subprocess output instead of ignoring it.
 """
 import subprocess
 import os
@@ -12,7 +13,7 @@ def cmd(c="cls"):
   os.system(c)
   
 def exe(f):
- subprocess.call(f)
+ return subprocess.call(f)
 
 exe(["custom.sh"]) # Customize Color
 cmd("echo 'Welcome to Roboot.'")
