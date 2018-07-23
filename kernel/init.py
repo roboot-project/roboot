@@ -10,6 +10,7 @@
 007, Add first boot system.
 008, Add system configuration.
 009, Ignore if not first boot.
+010, Add username and password implementation.
 """
 import subprocess
 import os
@@ -36,6 +37,10 @@ with open("sys.json") as f:
   if data["first-run"] == "false":
     data["first-run"] = "true"
     cmd("install_dependencies.sh")
+    username = input("Username >>>")
+    password = input("Password >>>")
+    data["username"] = username
+    data["password"] = password
   else:
     pass
   
