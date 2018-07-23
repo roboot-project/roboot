@@ -38,3 +38,5 @@ with open("sys.json") as f:
     cmd("install_dependencies.sh")
   else:
     pass
+  
+cmd("echo 'System version: " + data["version"] + "'")
