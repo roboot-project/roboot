@@ -1,7 +1,8 @@
 # By Zack Pace @ Roboot Team.  @RevelMind
 # Any edits made, list here:
-""" Edits:
-
+""" Edits;
+001, Add custom.sh, changes text color.
+002, Add edits section.
 """
 import subprocess
 import os
