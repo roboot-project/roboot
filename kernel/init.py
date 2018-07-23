@@ -3,5 +3,6 @@
 """ Edits:
 
 """
-
-print("Hello World")
+import subprocess
+import os
+os.system('custom.sh') # sets the background to blue
