@@ -9,6 +9,7 @@
 006, Import json system.
 007, Add first boot system.
 008, Add system configuration.
+009, Ignore if not first boot.
 """
 import subprocess
 import os
