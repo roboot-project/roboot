@@ -35,3 +35,5 @@ with open("sys.json") as f:
   if data["first-run"] == "false":
     data["first-run"] = "true"
     cmd("install_dependencies.sh")
+  else:
+    pass
