@@ -11,6 +11,7 @@
 008, Add system configuration.
 009, Ignore if not first boot.
 010, Add username and password implementation.
+011, Username and password can't be empty.
 """
 import subprocess
 import os
@@ -39,8 +40,10 @@ with open("sys.json") as f:
     cmd("install_dependencies.sh")
     username = input("Username >>>")
     password = input("Password >>>")
-    data["username"] = username
-    data["password"] = password
+    while username == "":
+      username = input("Username >>>")
+    while password == "":
+      password = input("Password >>>")
   else:
     pass
   
